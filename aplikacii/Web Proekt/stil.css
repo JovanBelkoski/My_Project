@@ -1,0 +1,494 @@
+html{
+    font-size: 62.5%;/*Golemina na html-ot izrazena vo procenti*/
+}
+
+/*Boja na pozadinata i padding vo levo 30rem*/
+body{
+    background: #fff;
+    padding-left: 30rem;
+}
+/*CSS na sekcijata*/
+section{
+    padding:1rem 5%;
+    min-height:100vh;
+}
+/*Dizajniranje na header da bide na pozicija fixed, background(temno zelena)*/
+header{
+    position: fixed;/*Pozicija fixed*/
+    top:0; left:0; bottom:0;
+    background:#0b5b3f;/*Zelena pozadina*/
+    display: flex;/*Linkovite, ikonite od boostrap da bidat na soodvetno rastojanie*/
+    align-items:center;/*Centricno poramneti*/
+    justify-content:space-between;/*Linkovite na sredina od header-ot*/
+    z-index:1000;
+    flex-flow:column;/*Postavenost vo kolona-edno pod drugo tekstot logo, linkovite i ikonite od boostrap*/
+    padding:8rem 2rem;
+}
+/*Vo ramki na header-ot ja dekorirame goleminata, fontot na logoto tekst*/
+header .logo{
+    text-transform:uppercase;
+    color:#fff;
+    font-size:3rem;
+    font-weight:bolder;
+    text-decoration:none;
+}
+/*Dekorirano e imeto so portokaleva boja*/
+header .logo span{
+    text-transform:uppercase;
+    color:#ca6a21;
+}
+/*Se pravi soodvetnata dekoracija na linkovite(da nebidat podvleceni, font, margini i sl.)*/
+header .linkovi a{
+    display: block;/*Linkovite da bidat eden pod drug vo header-vo sprotivno ke bidat vo eden red*/
+    font-size:2rem;
+    color:#fff;
+    margin:2rem 0;
+    text-decoration:none;
+}
+/*Linkovite odkako ke se namine na niv so mausot*/
+header .linkovi a:hover{
+    letter-spacing: .2rem;
+    color:#ca6a21;
+}
+/*Se pravi dekoracija na ikonite od Bootstrap(da nebidat podvleceni, font, boja, margini soodvetni)*/
+header .ikoni a{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0.7rem;
+    text-decoration:none;
+}
+/*Odkako ke se namine so mausot na ikonite od Bootsrap da dobijat boja druga-portokaleva*/
+header .ikoni a:hover{
+    color:#ca6a21;
+}
+/*Za sekcijata doma da postoi podobar dizajn*/
+.doma{
+    display: flex;/*Bitno za uredenosta, slikata da bide so soodveten format pokraj tekstot*/
+    align-items:center;
+    flex-wrap:wrap;
+    gap:1.5rem;/*Soodvetno rastojanie*/
+}
+
+.doma .slika{
+    flex: 1 1 40rem; /*Postavenost na slikata*/
+}
+/*Dizajn na slikata so soodvetnata sirina, visinata se postavuva avtomatski spored sirinata*/
+.doma .slika img{
+    width:100%;
+}
+.doma .ss{
+    flex: 1 1 40rem; /*Vo ovoj slucaj slikata ke bide posle tekstot vo ist red-dokolku go nema flex slikata ke ima golemi razmeri pod tekstot*/
+}
+/*Klasata .hello so golemina na font i boja*/
+.doma .ss .hello{
+    font-size: 2rem;
+    color:black;
+}
+/*Naslovot h3 so golemina soodvetna i boja*/
+.doma .ss h3{
+    font-size: 4.5rem;
+    color:black;/*tekstot koj sto ne e vo ramki na span ke bide so crna boja*/
+}
+/*Delot od h3 so span so soodvetna boja*/
+.doma .ss h3 span{
+    color: #ea8c21;/*samo tekstot vo ramki na span dobiva portokaleva boja*/
+}
+
+/*Klasata informacija so golemina, boja i padding*/
+.doma .ss .informacija{
+    font-size: 2.5rem;
+    color:black;
+    padding:.5rem 0;
+    font-style:bold;
+}
+/*Klasata tekst na paragrafot so soodvetna golemina na tekst, boja i style na tekstot*/
+.doma .ss .tekst{
+    font-size: 1.5rem;
+    color:#111;
+    padding:.5rem 0;
+    font-style:bold;
+}
+/*Dekoracija na tekstot vo sekcijata za mene*/
+.hh{
+    font-size:3rem;
+    padding-bottom:1rem;
+    color:#111;
+    text-transform: uppercase;
+    font-style:italic;
+}
+/*Dekoracija na span tekstot primer: moj vestini (delot moj da bide portokalev)*/
+.hh span{
+    font-size:3rem;
+    padding-bottom:1rem;
+    color:#ca6a21;
+    font-style: italic;
+    text-transform: uppercase;/*so golemi bukvi*/
+}
+/*Linkot koj sto e pod tekstot negova dekoracija-Moe CV*/
+.bb{
+    display: inline-block;/*Da bide smesteno malku podolu*/
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background-color:#ca6a21;
+    color:#fff;
+    cursor:pointer;
+    font-size:1.7rem;
+    text-decoration:none;/*Da nema podvlecenost na linkot*/
+}
+/*Odkako ke se namini so mausot na linkot koj sto e pod tekstot, linkot da dobie druga boja-crna*/
+.bb:hover{
+    background:black;
+    letter-spacing: .2rem;
+}
+/*CSS na kopce1 koe zema funkcija od skripta.js*/
+#kopce1{
+   font-size:17px;
+   color:white;
+   background-color: #ca6a21;
+   margin-left:420px;
+   margin-top:35px;
+   padding-left:12px;
+   padding-right:12px;
+   padding-top:12px;
+   padding-bottom: 12px;;
+}
+/*Odkako ke se namine so mausot na kopceto toa da dobie crna pozadina*/
+#kopce1:hover{
+   font-size:17px;
+   background-color:black;
+}
+/*CSS na kopce2 koja zema funkcija od skripta.js*/
+#kopce2{
+    font-size:17px;
+    color:white;
+    background-color: #ca6a21;
+    padding-left:12px;
+    padding-right:12px;
+    padding-top:12px;
+    padding-bottom: 12px;
+    margin-left:23px;
+ }
+ /*Odkako ke se pojdi so mausot na kopceto toa da dobie crna pozadina*/
+ #kopce2:hover{
+    font-size:17px;
+    background-color:black;
+ }
+/*Dizajniranje na delot za mene*/
+ .zamene .red1{
+    display:flex;/*se odnesuva na slikata da bide soodvetno formatirana flex*/
+    gap:1.5rem;/*slikata pokraj tekstot da bide podpovlecena ili ispaknata*/
+    padding-bottom: 2rem;
+ }
+ .zamene .red1 .slikaa{
+    flex:1 1 25rem;/*Postavenost na slikata*/
+ }
+ .zamene .red1 .slikaa img{
+    height: 95%;
+    width:95%;
+    object-fit:cover;/*Postavenost gore dolu na slikata*/
+    border: 1rem solid #fff;
+    border-radius: .5rem;/*Zaoblenost od .5rem na crnata linija pokraj slikata moja*/
+    box-shadow: 0.5rem 1rem black;/*Linijata koja sto ke bide zaoblena da bide vo crna boja*/
+ }
+ .zamene .red1 .ss{
+    flex:1 1 50rem;/*Za podobra postavenost na klasata .ss*/
+ }
+/*CSS na naslovot h3 od .ss*/
+ .zamene .red1 .ss h3{
+    color:#333;
+    font-size:3.5rem;
+ }
+ /*CSS na paragrafot od .ss*/
+ .zamene .red1 .ss p{
+    color:#666;
+    font-size:1.7rem;
+    padding:.5rem 0;
+ }
+ /*CSS za da bidat postaveni soodvetnite box neposredno do slikata vo dve koloni*/
+ .zamene .red1 .ss .container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    padding:0.5rem 0;
+ }
+/*Ureduvanje na box*/
+ .zamene .red1 .ss .container .box{
+    flex:1 1 20rem;
+ }
+ /*Ureduvanje na box span*/
+ .zamene .red1 .ss .container .box span{
+    color:#ca6a21;/*Primer: Godini: 22-Godini so portokaleva boja zato sto e vo ramki na span*/
+ }
+
+ /*Ureduvanje na boxx-da bidat edno posle drugo, a ne vo celina!!*/
+ .zamene .red2 .boxx{
+    flex: 1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    font-size:23px;
+ }
+ /*CSS na boxx*/
+ .zamene .red2 .boxx .box{
+    flex: 1 1 15rem;
+    background: rgb(248, 233, 205);
+    padding:2rem;
+    border-radius: .5rem; /*so zaobleni rabovi ke bidat prikazani delot moj vestini*/
+    box-shadow: 0.5rem 1rem black;/*Podpozadina crna boja*/
+ }
+ /*CSS na h3 od box-ot*/
+ .zamene .red2 .boxx .box h3{
+    color:#ca6a21;
+    font-size: 3rem;
+    font-style:bold;
+ }
+ /*CSS na p od box-ot*/
+ .zamene .red2 .boxx .box p{
+    color:#ca6a21;
+    font-size: 2rem;
+ }
+ /*CSS na oblasti .boxx-oblastite da bidat vo red(ne edna pod druga)*/
+ .oblast .boxx{
+    display: flex;/*Da nebidat oblastite edno pod drugo*/
+    flex-wrap: wrap;/*Podobra postavenost na oblastite*/
+    gap: 1.5rem;/*Da postoi soodvetno rastojanie pomegu  oblastite od 1.5rem*/
+ }
+ .oblast .hh{
+    padding-top:15rem;
+ }
+/*CSS na oblasti .box*/
+ .oblast .boxx .box{
+    position:relative;
+    flex:1 1 33rem;/*site ke bidat podednakvi vo sirina i visina*/
+    border-left: .2rem solid #ca6a21;/*Od leva strana postoi granicna linija portokaleva*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+ }
+/*Za prikazuvanje na krugovite kaj oblastite*/
+ .oblast .boxx .box::before{
+    content: '';
+    position:absolute;
+    top: 0; left:-1rem;/*Za da bidat krugovite na granicnata linija-podobar dizajn*/
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;/*Vo krug*/
+    background:#ca6a21;
+ }
+/*Podpozadina so crna boja, pozadina bela kaj oblastite*/
+ .oblast .boxx .box .spann{
+    background:rgb(237, 230, 220);
+    padding:1.5rem;
+    box-shadow: 0.5rem 1rem black;/*Crna podpozadina na oblastite*/
+    border-radius: .5rem;/*Zaobleni rabovi na oblastite*/
+ }
+
+ /*CSS na span da bide so bela boja i pozadina portokaleva-FIKT*/
+ .oblast .boxx .box .spann span{
+    color:white;
+    font-size:1.7rem;
+    background:#ca6a21;
+    border-radius:50rem;/*vo okrugli oblik*/
+    padding:.4rem 1rem;
+ }
+/*CSS na naslov*/
+ .oblast .boxx .box .spann h1{
+    font-size: 2.5rem;
+    padding:.5rem 0;
+    color:black;
+ }
+/*CSS na paragrafot vo oblastite*/
+.oblast .boxx .box .spann p{
+    color:rgb(52, 51, 51);
+}
+
+/*CSS na kontakti kade sto kontaktite se vo red(ne edno pod drugo)*/
+.kontakt .ikonik{
+    display: flex;/*Kontaktite da bidat vo red a ne edno pod drugo*/
+    gap: 1.5rem;/*Rastojanie pomegu kontaktite da ne se spojuvaat*/
+    padding-bottom: 2rem;
+}
+/*CSS so pozadina boja-bela, zasencanost od 0 .5rem vo crna boja*/
+.kontakt .ikonik .ikoni{
+    flex: 1 1 25rem; /*vo sirocina*/
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 .5rem 1rem black;/*zasencanost od 0.5rem 1 rem vo crna boja*/
+    border-radius:0.5rem;/*Zaobluvanje na rabovite*/
+}
+/*CSS na ikonite*/
+.kontakt .ikonik .ikoni i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem; /*ikonite da bidat vo centar*/
+    font-size:2rem;
+    background:#ca6a21;
+    color: white;
+    border-radius:50%; /*za da imaat ikonite okrugl oblik vo portokaleva boja*/
+}
+/*CSS na naslovot od kontakti*/
+.kontakt .ikonik .ikoni h3{
+    color:black;
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+/*CSS  na paragrafot vo kontakti*/
+.kontakt .ikonik .ikoni p{
+    color:#666;
+    font-size: 1.7rem;
+}
+
+.kontakt .red{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1.5rem;/*Da postoi soodvetno rastojanie pomegu formata i mapata*/
+}
+/*CSS na formata*/
+.kontakt .red form{
+    flex: 1 1 55rem;
+    background:white;
+    padding:0 2rem;
+    box-shadow: 0 .5rem 1rem black;
+    border-radius: .5rem;
+}
+/*CSS na mapata*/
+.kontakt .red .map{
+    flex: 1 1 25rem;
+    border: 1rem solid white;/*Vo bela pozadina*/
+    box-shadow: 0 .5rem 1rem black;/*Crna podpozadina zasencanost*/
+    border-radius: .5rem;/*Okrugli rabovi na belata pozadina*/
+    width: 100%;
+}
+/*CSS na .box i textarea*/
+.kontakt .red form .box,
+.kontakt .red form textarea{
+    width: 100%;
+    border-bottom: .1rem solid black;
+    color: black;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+/*so focus na .box i textarea*/
+.kontakt .red form .box:focus,
+.kontakt .red form textarea:focus{
+    border-color:#ca6a21;
+}
+/*placeholder*/
+.kontakt .red form .box::placeholder,
+.kontakt .red form textarea::placeholder{
+    text-transform: capitalize;
+}
+/*CSS na textarea*/
+.kontakt .red form textarea{
+    height: 20rem;
+    resize: none;
+}
+/*CSS na kopceto isprati poraka vo kontakti*/
+.kontakt .red form .kopcee{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+/*CSS na footer-ot*/
+footer{
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 2.5rem;
+    text-align:center;
+    color:black;
+    background: white;
+}
+/*CSS na kopceto vo foot-ot*/
+.kop{
+    color:white;
+    background-color: #ca6a21;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+/*Odkako ke se namini so mausot na kopceto vo foot-ot da dobie crna boja*/
+.kop:hover{
+    color:white;
+    background-color: #171717;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+/*Tekstot koj sto se pojavuva posle kliknuvanje na kopceto vo foot-ot (portokaleva boja na tekst)*/
+#foot{
+    color:#ca6a21;
+    font-size:18px;
+}
+/*CSS na kopce-Registriraj se*/
+.kopcef{
+    color:white;
+    background-color: #ca6a21;
+    font-size:19px;
+    border-radius: 25%;
+    padding-left:12px;
+    padding-right:12px;
+    padding-bottom:12px;
+    padding-top:12px;
+    text-decoration: none;
+    margin-left:280px;
+}
+/*Sekcijata grad da bide so margini soodvetni i width od 70%*/
+.grad{
+    margin: 150px auto;
+    width: 100%;
+    background:rgb(62, 160, 193);
+}
+/*Ureduvanje na slikata vo sekcijata 'MojGrad'*/
+.grad img{
+    max-width:320px;
+    float: left;
+    border: 3px solid #fff;/*Slikata dobiva odokolu ramka solid bela od 3px*/
+    border-radius:10px;/*So zaobleni rabovi*/
+    margin-right:15px;/*Odvojuvanje na tekstot od slikata*/
+    margin-bottom:20px;/*Se pomestuva poslednata slika*/
+}
+
+.grad .tekst {
+    color:white
+}
+/*Dizajn na naslovot*/
+.grad .tekst .paragraf h2{
+   font-size:18px;
+   color:white;
+   margin-top:23px;
+}
+/*Dizajn na paragrafot*/
+.grad .tekst .paragraf p{
+    font-size:15px;
+    color:white;
+ }
+
+/*Dekoracija na span tekstot primer: MojGrad (delot moj da bide plav)*/
+.hh1 span{
+    font-size:3rem;
+    padding-bottom:1rem;
+    color:#0d5573;
+    font-style: italic;
+    text-transform: uppercase;/*so golemi bukvi*/
+}
+/*Dizajn na hh1*/
+.hh1{
+    font-size:3rem;
+    padding-bottom:1rem;
+    color:black;
+    font-style: italic;
+    text-transform: uppercase;/*so golemi bukvi*/
+}
+/*CSS na tekstot od kopce 2-koj ja vraka funkcijata so tekst*/
+#ex{
+    color:#ca6a21;
+    font-size:28px;
+    margin-left:160px;
+    padding-top:25px;
+}

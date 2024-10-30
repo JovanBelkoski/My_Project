@@ -1,0 +1,299 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: #f0f2f5;
+}
+
+.telo {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cv {
+    display: flex;
+    width: 100%;
+}
+
+aside {
+    width: 30%;
+    padding: 20px;
+    background: #08677e;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+main {
+    width: 70%;
+    padding: 20px;
+}
+
+.profilnaslika {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profilnaslika img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profilnaslika input {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #0073b1;
+    cursor: pointer;
+}
+
+.profilnaslika input:hover {
+    background: #e0e0e0;
+}
+
+.informacii {
+    text-align: center;
+}
+
+.informacii h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.informacii p {
+    margin: 10px 0;
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.informacii a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.informacii a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #0e5d88;
+    padding-bottom: 5px;
+}
+
+.experience, .edukacija {
+    margin-bottom: 20px;
+}
+
+.experience h3, .edukacija h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.experience p, .edukacija p {
+    margin: 5px 0;
+    color: #777;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    background: #0073b1;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #0073b1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #005582;
+}
+
+.edukacijaa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.edukacijaa .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.edukacijaa p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.edukacijaa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    font-size: 1.2em;
+    color: #2ec2cf;
+}
+
+.edukacijaa .empty-star {
+    color: #ddd;
+}
+
+.edukacija-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edukacija-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0e5d88;
+    padding-bottom: 5px;
+}
+
+.edukacija-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.edukacija-list p {
+    background: #0073b1;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.edukacija-list p:hover {
+    background: #005582;
+}
+
+.proekti-lista {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.proekti-listaa {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proekti-listaa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.proekti-listaa a {
+    color: #08677e;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.proekti-listaa a:hover {
+    text-decoration: underline;
+}
+
+.proekti-listaa p {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+
+@media print {
+    .profilnaslika input,
+    button {
+        display: none;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    .telo {
+        page-break-after: avoid;
+    }
+
+    #cv {
+        display: block;
+        page-break-after: avoid;
+    }
+
+    aside, main {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Регистрација!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="naslov">Регистрирај се!!!</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Име</label><label class="validation-error hide" id="imeValidationError">Немате внесено ИМЕ!!</label>
+                        <input type="text" name="ime" id="ime">
+                    </div>
+                    <div>
+                        <label>Презиме</label>
+                        <input type="text" name="prezime" id="prezime">
+                    </div>
+                    <div>
+                        <label>Факултет</label>
+                        <input type="text" name="fakultet" id="fakultet">
+                    </div>
+                    <div>
+                        <label>Индекс</label>
+                        <input type="text" name="indeks" id="indeks">
+                    </div>
+                    <div>
+                        <label>Датум</label>
+                        <input type="date" name="datum" id="datum">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Регистрирај се!!">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="listap">
+                    <thead>
+                        <tr>
+                            <th>Име</th>
+                            <th>Презиме</th>
+                            <th>Датум</th>
+                            <th>Факултет</th>
+                            <th>Индекс</th>
+                            <th>Уреди</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

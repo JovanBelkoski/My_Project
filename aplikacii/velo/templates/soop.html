@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сооптение за турата Струга-Охрид-Струга</title>
+    <!-- Врска кон CSS фајлот -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stil.css') }}">
+</head>
+<body>
+    <section class="bike-tour-announcement">
+        <div class="announcement">
+            <h1>Соопштение за турата Струга-Охрид-Струга</h1>
+            <p class="details">Датум: <strong>Октомври 15, 2024</strong></p>
+            <p class="details">Време: <strong>9:00 AM - 1:00 PM</strong></p>
+            <p class="details">Локација од која се тргнува: <strong>Караорман, Струга, Р.Македонија</strong></p>
+            <p>
+                Почитувани љубители на велосипедизмот,<br><br>
+                Ви соопштуваме дека сите кои сте заинтересирани повторно да бидете со нас во тимот на велосипедското друштво, дека на <strong>15-10-2024</strong> година ќе се организира велосипедска
+                тура на локација Струга-Охрид-Струга. Ви гарантираме ден исполнет со голема дружба. Не чекајте и веднаш пријавете го вашето учество на формата која ви е достапна на веб страната.<br><br>
+                Вашите пријави ќе бидат земени во предвид најкасно до <strong>14-10-2024</strong> година. Секоја тура ќе се реализира само доколку има минимум двајца пријавени кандидати на таа релација.<br>
+                Ве очекуваме во што поголем број.<br><br>
+                Со почит,<br>
+                Велосипедско друштво <strong>JocoTours</strong>, Струга.
+            </p>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <!-- Динамично вчитување на слика преку Flask -->
+                    <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Mountain Trail">
+                    <div class="caption">Тргнуваме од Струга, Караорман, локација која ја имате на веб страната.</div>
+                </div>
+                <div class="slide">
+                    <img src="{{ url_for('static', filename='images/image5.jpg') }}" alt="City Park">
+                    <div class="caption">Одиме по стариот пат и стигнуваме до Охрид</div>
+                </div>
+                <div class="slide">
+                    <img src="{{ url_for('static', filename='images/pateka.jpg') }}" alt="Cyclists Together">
+                    <div class="caption">Покрај кејот на Охридското езеро одиме по патеката кај Cuba Libre.</div>
+                </div>
+                <div class="slide">
+                    <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Cyclists Together">
+                    <div class="caption">Се искачуваме до инекс Горица</div>
+                </div>
+                <div class="slide">
+                    <img src="{{ url_for('static', filename='images/image5.jpg') }}" alt="Cyclists Together">
+                    <div class="caption">Се враќаме во Струга по истиот пат</div>
+                </div>
+            </div>
+
+            <!-- Контроли за слајдерот -->
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.querySelectorAll('.slide');
+            if (n >= slides.length) { slideIndex = 0; }
+            if (n < 0) { slideIndex = slides.length - 1; }
+
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+
+            slides[slideIndex].style.display = 'block';
+        }
+    </script>
+</body>
+</html>

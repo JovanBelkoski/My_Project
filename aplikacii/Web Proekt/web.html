@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><!--Kirilicna podrska-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web</title>
+
+    <!--Potrebnite linkovi od Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Se povrzuvame so CSS fajl-->
+    <link rel="stylesheet" href="stil.css">
+    </head>
+    <body>
+        <!--Kreirame header-->
+    <header>
+        <a href="#" class="logo"><span>Јован</span>Белкоски</a>
+        <!--Soodvetnite hiperlinkovi vo ramki na header-->
+        <nav class="linkovi">
+            <a href="#doma">Дома</a>
+            <a href="#zamene">За мене</a>
+            <a href="#oblast">Области</a>
+            <a href="#grad">Мојот Град</a>
+            <a href="#kontakt">Контакти</a>
+            <a href="https://fikt.uklo.edu.mk/">ФИКТ</a>
+            <a href="https://jovanb-inki755.w3spaces.com/Vezbi-4/cv.html">Мое CV</a>
+        </nav>
+        
+        <!--Bootstrap ikoni-->
+        <div class="ikoni">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" class="fa fa-envelope"></a>
+        </div>
+    </header>
+    <!--Postavuvanje na kopcinja so funkcionalnosti-->
+    <button onclick="funkcija()" id="kopce1">Кликни</button>
+    <button onclick="funkcija2()" id="kopce2">Кликни</button>
+    <p id="ex"></p>
+
+    <!--Postavuvanje na naslov, paragraf i link koj vodi kon poveke detali-->
+    <section class="doma" id="doma">
+        <div class="ss">
+            <span class="hello">Здраво на сите...</span>
+            <h3>Јас сум<span>Јован Белкоски</span></h3>
+            <p class="informacija">Студент сум на ФИКТ</p>
+            <p class="tekst">Студент сум на Факултетот за информатички науки и комуникациски технологии-Битола, 
+            при Универзитет "св.Климент Охридски"-Битола. Студиите ги започнав во 2020 година на прв циклус 
+            на смерот ИНКИ-Информатички науки и комуникациско инженерство...
+            </p>
+            <a href="#zamene" class="bb">За мене</a>
+        </div>
+        <!--Slika za stranata 'ZaMene'-->
+        <div class="slika">
+            <img src="slika.png" alt="slika od mene"/>
+        </div>
+    </section>
+
+    <!--Za mene section-->
+    <section class="zamene" id="zamene">
+        <h1 class="hh">За<span>мене</span></h1>
+
+        <!--Ureduvanje na delot za mene-->
+        <div class="red1">
+            <div class="slikaa">
+            <img src="slikamoja.jpg">
+            </div>
+        <div class="ss">
+          <h3>моето име е Јован Белкоски, јас сум студент на ФИКТ</h3>
+          <p>Студент сум на Факултетот за информатички науки и комуникациски технологии-Битола, 
+            при Универзитет "св.Климент Охридски"-Битола. Студиите ги започнав во 2020 година на прв циклус 
+            на смерот ИНКИ-Информатички науки и комуникациско инженерство...
+        </p>
+        
+        <div class="container">
+            <div class="box">
+                <p><span>години : </span>22</p>
+                <p><span>пол : </span>машко</p>
+                <p><span>студирање/работа : </span>студент</p>
+                <p><span>јазик : </span>македонски</p>
+            </div>
+
+            <div class="box">
+                <p><span>телефон : </span>077-585-470</p>
+                <p><span>маил : </span>belkoskijovan111@gmail.com</p>
+                <p><span>Држава : </span>Македонија</p>
+                <p><span>Град : </span>Струга</p>
+            </div>
+        </div>
+        <!--Postavuvanje na link-Moe CV-->
+        <a href="https://jovanb-inki755.w3spaces.com/Vezbi-4/cv.html" class="bb">Мое CV</a>
+        </div>
+        </div>
+        <!--Naslov na moj vestini-->
+        <h1 class="hh"><span>мој</span>вештини</h1>
+        <div class="red2">
+            <!--Ureduvanje na box-ot-->
+            <div class="boxx">
+                <div class="box">
+                <h3> >> 2+</h3>
+                <p>години искуство со веб дизајн</p>
+                </div>
+    
+                <div class="box">
+                <h3> >> 8+</h3>
+                <p>месеци искуство со веб програмирање</p>
+                </div>
+    
+                <div class="box">
+                <h3> >> --</h3>
+                <p>послабо искуство во UI design</p>
+                </div>
+    
+                <div class="box">
+                <h3> >> 1+</h3>
+                <p>годинa искуство со Java програмирање</p>
+                </div>
+            </div> 
+    </div>
+</section>
+
+<!--Kreirame section Oblast na poznavanje-->
+<section class="oblast" id="oblast">
+    <h1 class="hh"><span>познати</span>области</h1>
+    <div class="boxx">
+        <div class="box">
+            <div class="spann">
+                <span>ФИКТ</span>
+                <h1>Web дизајн</h1>
+                <p>Дизајнот е процес на собирање на креативни и иновативни идеи кои на естетски начин се имплементираат, водени од одредени принципи и за одредена цел. 
+                    Веб-дизајнот е сличен процес само во оваа ситуација тоа се прави на малку подруг начин. </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="spann">
+                <span>ФИКТ</span>
+                <h1>Web Програмирање</h1>
+                <p>Веб програмирањето овозможува креирање на веб страници или веб апликации.
+                    Може да се користи било која околина-Visual Studio и сличен.
+                    Корисниците можат да пристапат до нашата веб страна преку интернет конекција.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="spann">
+                <span>ФИКТ</span>
+                <h1>Јава Програмирање</h1>
+                <p>Јава е компјутерски програмски јазик . 
+                    Таа им овозможува на програмерите да пишуваат компјутерски инструкции со помош на англиски команди, наместо да пишуваат во нумерички кодови. 
+                    Тоа е познато како јазик на високо ниво, бидејќи може лесно да се чита и пишува од луѓето.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="spann">
+                <span>ФИКТ</span>
+                <h1>Компјутерска графика</h1>
+                <p>Јава е компјутерски програмски јазик . 
+                    Таа им овозможува на програмерите да пишуваат компјутерски инструкции со помош на англиски команди, наместо да пишуваат во нумерички кодови. 
+                    Тоа е познато како јазик на високо ниво, бидејќи може лесно да се чита и пишува од луѓето.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="spann">
+                <span>ФИКТ</span>
+                <h1>NoSQL Бази</h1>
+                <p>Јава е компјутерски програмски јазик . 
+                    Таа им овозможува на програмерите да пишуваат компјутерски инструкции со помош на англиски команди, наместо да пишуваат во нумерички кодови. 
+                    Тоа е познато како јазик на високо ниво, бидејќи може лесно да се чита и пишува од луѓето.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="spann">
+                <span>ФИКТ</span>
+                <h1>Графички дизајн</h1>
+                <p>Јава е компјутерски програмски јазик . 
+                    Таа им овозможува на програмерите да пишуваат компјутерски инструкции со помош на англиски команди, наместо да пишуваат во нумерички кодови. 
+                    Тоа е познато како јазик на високо ниво, бидејќи може лесно да се чита и пишува од луѓето.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Kreirame section za grad-->
+<section class="grad" id="grad">
+    <h1 class="hh1"><span>мојот</span>град</h1>
+    <img src="crndrim.jpg">
+    <div class="tekst">
+        <div class="paragraf">
+            <h2>Река Црн Дрим</h2>
+            <p>Црн Дрим извира во Свети Наум, минува низ Охридското Езеро и излегува од него кај градот Струга на надморска височина од 695 метри. 
+                Црн Дрим ја напушта Македонија во близина на градот Дебар на 476 метри надморска височина. На македонска територија Црн Дрим е долг 56 километри. 
+                Но реката има вообичаен тек само нешто помалку од една половина од таа должина и тоа од Струга па сè до селото Ташмаруништа. 
+                Напуштајќи го селото на север реката влегува во клисура и веднаш по неа формира езеро благодарение на брана висока 82 метри сместена 10 км на север на другата страна на езерото. Браната ја формира акумулацијата „Глобочица“ создадена од водите на Црн Дрим.</p> 
+        </div>
+        </div>
+
+        <img src="ezero.jpg">
+        <div class="tekst">
+            <div class="paragraf">
+                <h2>Охридско езеро</h2>
+                <p>Охридското Езеро е најголемо и најзначајно природно езеро во Македонија и веројатно од биолошки аспект најзначајниот стагнантен акватичен екоситем во Европа. 
+                    Се карактеризира со богата историја, културa, археолошки наоѓалишта и природна убавина. 
+                    Благодарение на ваквите особености, во 1980 година Охридското Езеро и градот Охрид се прогласени за Светско културно наследство, под заштита на УНЕСКО.
+                    Потеклото на Охридското Езеро, гледано во целост како езерски систем со Преспанското езеро е тектонско. 
+                    Двете езера претставуваат остатоци од базенот на поранешното Десаретско езеро од кое настануваат по пат на геотектонска депресија за време на Плиоценот (пред 5,3-1,8 милиони години). 
+                    Неговата геолошка старост се проценува на околу 2-3 милиони години.</p>   
+            </div>
+          </div>
+
+    <img src="most.JPG">
+        <div class="tekst">
+            <div class="paragraf">
+                <h2>Дрвен мост Струга</h2>
+                <p>Реката Дрим во центарот на Струга ќе ја премостува нов, атрактивен дрвен мост. 
+                    Проектантска куќа од Австрија во која работат Македонци го изработи проектот, а од таму се увезени и дрвените делови.
+                    Идниот пешачки мост се монтира на местото на некогашниот мост, познат како „Мостот на Нина“, по името на некогашната општинска раководителка на Струга, а беше демонтиран пред пет години, поради дотраеност.</p>   
+            </div>
+    </div>
+</section>
+
+<!--Kreirame section za kontakt-->
+<section class="kontakt" id="kontakt">
+    <h1 class="hh"><span>мој</span>контакти</h1>
+    <!--Postavuvame ikoni od boostrap na kontaktite-email-->
+    <div class="ikonik">
+        <div class="ikoni">
+            <i class="fa fa-envelope"></i>
+            <h3>Мој меил</h3>
+            <p>belkoskijovan111@gmail.com</p>
+            <p>belkoski.jovan@uklo.edu.mk</p>
+        </div>
+    <!--Ikona telefon boostrap-->
+        <div class="ikoni">
+            <i class="fa fa-phone"></i>
+            <h3>Мој телефон</h3>
+            <p>077-585-470</p>
+        </div>
+       <!--Ikona adresa boostrap-->
+        <div class="ikoni">
+            <i class="fas fa-home"></i>
+            <h3>Моја адреса</h3>
+            <p>ул. Туристичка-Струга</p>
+            <p>ул. Партизанска-Битола</p>
+        </div>
+    </div>
+
+    <!--Kreirame forma vo kontakti-->
+    <div class="red">
+        <form action="">
+            <input type="text" placeholder="Име" class="box">
+            <input type="email" placeholder="Меил" class="box">
+            <input type="number" placeholder="Број" class="box">
+
+            <textarea name="" placeholder="порака" id="" cols="30" rows="10"></textarea><!--Poraki-->
+            <input type="Испрати" class="bb" value="испрати порака"><!--Kopce Isprati poraka-->
+            <a href="crud.html" class="kopcef">Регистрирај се!!</a>
+        </form>
+        <!--Postavuvame mapa spored linkot od google maps-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48044.78494373847!2d20.63957570031803!3d41.18254975932264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350e73de5f937d3%3A0x6aa0d08129c86a44!2sStruga!5e0!3m2!1sen!2smk!4v1681585080659!5m2!1sen!2smk" class="mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></i>
+    </div>
+</section>
+
+<!--Kreiranje na footer-->
+<footer><button onclick="funk()" class="kop">Повеќе</button><!--Ja povikuvame funkcijata od skripta.js-->
+<p id="foot"></p><!--Tekst koj ke bide ureden vo CSS-->
+</footer>
+        <!--Se povrzuvame so JavaScript fajl-->
+    <script src="skripta.js"></script>
+    </body>
+</html>
